@@ -12,13 +12,13 @@
     "nodemon": "^1.18.4"
   },
   "scripts": {
-    "deploy":"yarn build && npm link",
-    "undeploy":"npm unlink",
+    "deploy": "yarn build && npm link",
+    "undeploy": "npm unlink",
     "build": "babel src -d dist && chmod +x dist/index.js",
     "start": "yarn build && node dist/index.js",
     "watch": "nodemon --exec babel-node -- src/index.js"
   },
-  "bin":{
+  "bin": {
     "weather-app": "dist/index.js"
   },
   "dependencies": {
